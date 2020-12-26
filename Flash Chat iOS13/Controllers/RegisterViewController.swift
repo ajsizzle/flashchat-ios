@@ -22,7 +22,7 @@ class RegisterViewController: UIViewController {
                     print(e.localizedDescription) // pop-up to let user know of error for production
                 } else {
                     //Navigate to the ChatVC
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }
             }
         }
